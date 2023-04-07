@@ -4,7 +4,9 @@
   "description": "[![Actions Status](https://github.com/Vasmart24/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Vasmart24/frontend-project-44/actions)",
   "type": "module",
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/games/brain-games.js",
+    "brain-even": "bin/games/brain-even.js",
+    "brain-calc": "bin/games/brain-calc.js"
   },
   "main": "index.js",
   "scripts": {
@@ -22,5 +24,10 @@
   "homepage": "https://github.com/Vasmart24/frontend-project-44#readme",
   "dependencies": {
     "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "eslint": "^8.35.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5"
   }
 }
