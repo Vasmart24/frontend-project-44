@@ -6,4 +6,3 @@ export default () => {
   console.log(`Hello, ${userName}!`);
   return userName;
 };
-
