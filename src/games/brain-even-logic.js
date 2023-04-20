@@ -10,6 +10,6 @@ const isEven = (num) => {
   return false;
 };
 
-const generateEvenRound = generateRound(isEven);
+const generateEvenRound = () => generateRound(isEven);
 
-export default gameEngine(task, generateEvenRound, 'str');
+export default () => gameEngine(task, generateEvenRound, 'str');

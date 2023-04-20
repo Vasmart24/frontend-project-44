@@ -1,4 +1,4 @@
-import readlineSync from '../readline-sync';
+import readlineSync from 'readline-sync';
 import greetings from './cli.js';
 
 export const randomNum = (range) => Math.floor(Math.random() * range);
@@ -25,7 +25,7 @@ export const generateGameRoundWithAnswerStr = (func) => {
 
 const gameWithAnswerNum = (expression, answer) => {
   console.log(`Question:${expression}`);
-  let userAnswer = readlineSync.question('Your answer: ');
+  let userAnswer = Number(readlineSync.question('Your answer: '));
   if (userAnswer === answer) {
     console.log('Correct!');
     return true;

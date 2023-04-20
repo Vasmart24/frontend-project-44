@@ -8,10 +8,10 @@ lint:
 	npx eslint .
 
 brain-even:
-	node bin/games/brain-even.js
+	node bin/runBrainEven.js
 
 brain-calc:
-	node bin/games/brain-calc.js
+	node bin/runBrainCalc.js
 
 brain-games:
-	node bin/games/brain-games.js
+	node bin/runBrainGames.js
