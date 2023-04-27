@@ -24,7 +24,7 @@ export const generateGameRoundWithAnswerStr = (func) => {
 };
 
 const gameWithAnswerNum = (expression, answer) => {
-  console.log(`Question:${expression}`);
+  console.log(`Question: ${expression}`);
   let userAnswer = Number(readlineSync.question('Your answer: '));
   if (userAnswer === answer) {
     console.log('Correct!');

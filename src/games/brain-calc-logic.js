@@ -22,7 +22,7 @@ const brainCalcGame = () => {
   } else {
     correctAnswer = firstNumber * secondNumber;
   }
-  return [expression, correctAnswer]
+  return [expression, correctAnswer];
 };
 
 export default () => gameEngine(task, brainCalcGame, 'num');

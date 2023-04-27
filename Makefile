@@ -15,3 +15,6 @@ brain-calc:
 
 brain-games:
 	node bin/runBrainGames.js
+
+brain-GCD:
+	node bin/runBrainGCD.js
