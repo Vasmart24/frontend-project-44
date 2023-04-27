@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 import greetings from './cli.js';
 
-export const randomNum = (range) => Math.floor(Math.random() * range);
+export const randomNum = (range) => Math.floor(Math.random() * range) + 1;
 
 const begin = (task) => {
   const name = greetings();

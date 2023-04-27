@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { gameEngine } from '../index.js';
+import { gameEngine, randomNum } from '../index.js';
 
 const task = 'What is the result of the expression?';
 
@@ -8,8 +8,8 @@ const brainCalcGame = () => {
   const randMathSignIndex = Math.floor(Math.random() * 3);
   const mathSign = signsOfCalculations[randMathSignIndex];
 
-  const firstNumber = Math.floor(Math.random() * 100);
-  const secondNumber = Math.floor(Math.random() * 100);
+  const firstNumber = randomNum(100);
+  const secondNumber = randomNum(100);
 
   const expression = `${firstNumber} ${mathSign} ${secondNumber}`;
 

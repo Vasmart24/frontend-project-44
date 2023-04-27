@@ -18,3 +18,6 @@ brain-games:
 
 brain-GCD:
 	node bin/runBrainGCD.js
+
+brain-progression:
+	node bin/runBrainProgression.js
