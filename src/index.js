@@ -11,26 +11,26 @@ const begin = (task) => {
 
 const endGame = (countOfCorrectAnswers, name) => {
   if (countOfCorrectAnswers === 3) {
-    console.log(`Congratulations, ${name}!`)
+    console.log(`Congratulations, ${name}!`);
   } else {
-    console.log(`Let's try again, ${name}!`)
+    console.log(`Let's try again, ${name}!`);
   }
 };
 
 export const generateGameRoundWithAnswerStr = (func) => {
   const expression = randomNum(100);
-  const answer = func(expression) ? `yes` : 'no';
+  const answer = func(expression) ? 'yes' : 'no';
   return [expression, answer];
 };
 
 const gameWithAnswerNum = (expression, answer) => {
   console.log(`Question: ${expression}`);
-  let userAnswer = Number(readlineSync.question('Your answer: '));
-  if (userAnswer === answer) {
+  const userAnswer = readlineSync.question('Your answer: ');
+  if (Number(userAnswer) === answer) {
     console.log('Correct!');
     return true;
   }
-  if (Number.isNaN(userAnswer)) {
+  if (Number.isNaN(userAnswer) || userAnswer === '') {
     console.log('Sorry, only number are allowed :(.');
     return false;
   }
@@ -57,7 +57,7 @@ const gameWithAnswerStr = (expression, answer) => {
 export const gameEngine = (rules, generateRound, typeOfAnswer) => {
   const name = begin(rules);
   let countOfCorrectAnswers = 0;
-  
+
   for (let gamesCount = 1; gamesCount <= 3; gamesCount += 1) {
     const [question, answer] = generateRound();
 
