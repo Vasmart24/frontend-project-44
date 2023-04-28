@@ -9,7 +9,7 @@
     "brain-Prime": "bin/runBrainPrime.js",
     "brain-even": "bin/runBrainEven.js",
     "brain-calc": "bin/runBrainCalc.js",
-    "brain-GCD": "bin/runBrainGCD.js"
+    "brain-gcd": "bin/runBrainGCD.js"
   },
   "main": "index.js",
   "scripts": {
