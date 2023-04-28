@@ -16,7 +16,7 @@ brain-calc:
 brain-games:
 	node bin/runBrainGames.js
 
-brain-GCD:
+brain-gcd:
 	node bin/runBrainGCD.js
 
 brain-progression:
@@ -24,3 +24,5 @@ brain-progression:
 
 brain-Prime:
 	node bin/runBrainPrime.js
+
+
