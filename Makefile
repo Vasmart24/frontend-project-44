@@ -22,7 +22,7 @@ brain-gcd:
 brain-progression:
 	node bin/runBrainProgression.js
 
-brain-Prime:
+brain-prime:
 	node bin/runBrainPrime.js
 
 
